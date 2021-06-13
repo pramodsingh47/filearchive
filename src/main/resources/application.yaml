@@ -1,0 +1,44 @@
+server:
+  port: 8002
+  error: 
+    include-stacktrace: never
+  
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+
+
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 200MB
+      file-size-threshold: 1KB
+             
+      
+      
+      
+# Database configuration
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/archivesystem
+    username: root
+    password: root
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    static-path-pattern: /static/files/
+    
+archive:
+  file-upload-location: E:\\My All Document\\Wipro_Learnig_Project\\
+  format: word, rtf, email, excel, tif, jpg, gif, pdf, zip
+ 
+    
+      
+
+    
+
+      
+        
