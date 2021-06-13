@@ -4,10 +4,12 @@ package com.filedm.dto;
 public class JwtResponse {
 
 	String token;
+
 	public JwtResponse()
 	{
 		
 	}
+
 	public JwtResponse(String token) {
 		super();
 		this.token = token;
